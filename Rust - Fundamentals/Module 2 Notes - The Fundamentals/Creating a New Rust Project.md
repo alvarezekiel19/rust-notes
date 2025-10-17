@@ -30,24 +30,24 @@ or have separate box for different projects.
 
 #### 1. Using `cargo init .`
 
-    - **Purpose**: Initializes a new Rust project in the current directory.
-    - **Output**: Creates a binary applications with `Cargo.toml` and `main.rs`.
-    - **Use Case**: Ideal for starting a project in an existing folder.
+- **Purpose**: Initializes a new Rust project in the current directory.
+- **Output**: Creates a binary applications with `Cargo.toml` and `main.rs`.
+- **Use Case**: Ideal for starting a project in an existing folder.
 
 #### 2. Using `cargo init --lib`
 
-    - **Purpose**: Initializes a new Rust library project in the current directory.
-    - **Output**: Creates a library application with `Cargo.toml` and `lib.rs` (no `main.rs`).
-    - **Use Case**: Suitable for creating reusable code that can be shared with other projects.
+- **Purpose**: Initializes a new Rust library project in the current directory.
+- **Output**: Creates a library application with `Cargo.toml` and `lib.rs` (no `main.rs`).
+- **Use Case**: Suitable for creating reusable code that can be shared with other projects.
 
 #### 3. Using `cargo new <project_name>`
 
-    - **Purpose**: Creates a new Rust project in a separate subdirectory.
-    - **Output**: Generates a binary application with its own folder containing `Cargo.toml` and `main.rs`.
-    - **Use Case**: Best for starting a completely new project with its own structure.
+- **Purpose**: Creates a new Rust project in a separate subdirectory.
+- **Output**: Generates a binary application with its own folder containing `Cargo.toml` and `main.rs`.
+- **Use Case**: Best for starting a completely new project with its own structure.
 
 #### 4. Using `cargo new <project_name> --lib`
 
-    - **Purpose**: Creates a new Rust library project in a separate subdirectory.
-    - **Output**: Generates a library application with its own folder containing `Cargo.toml` and `lib.rs`.
-    - **Use Case**: Ideal for starting a new library that can be used by other projects.
+- **Purpose**: Creates a new Rust library project in a separate subdirectory.
+- **Output**: Generates a library application with its own folder containing `Cargo.toml` and `lib.rs`.
+- **Use Case**: Ideal for starting a new library that can be used by other projects.

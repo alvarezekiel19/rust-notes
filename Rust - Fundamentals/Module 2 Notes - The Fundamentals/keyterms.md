@@ -8,6 +8,8 @@
 - **Scope**: A region within source code where names (e.g., functions, variables) are accessible; determined by enclosing braces ({...}) or indentation levels.
 - **Semicolons**: Terminators denoting statement boundaries, required in most cases except inside blocks, expressions, and macros.
 
+---
+
 ### Rust simple example
 
 ```rust

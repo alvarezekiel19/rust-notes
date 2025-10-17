@@ -16,15 +16,15 @@ or have separate box for different projects.
 
 #### Binary Packages
 
-    - **Executables**: A Binary Package is designed to be an executable program. When you run it, it performs a specific task.
-    - **Main Function**: It contains a `main.rs` file with a `main` function, which is the entry point of the program.
-    - **Usage**: Typically used for applications that you want to run directly, like command-line tools or desktop applications.
+- **Executables**: A Binary Package is designed to be an executable program. When you run it, it performs a specific task.
+- **Main Function**: It contains a `main.rs` file with a `main` function, which is the entry point of the program.
+- **Usage**: Typically used for applications that you want to run directly, like command-line tools or desktop applications.
 
 #### Library Packages:
 
-    - **Reusable Code**: A library package is meant to provide reusable code that can be used by other programs. It does not run on its own.
-    - **No `main` Function**: It contains a `lib.rs` file instead of `main.rs`, and it does not have a `main` function.
-    - **Usage**: Used to define functions, structs, and traits that can be shared across multiple binary packages or other libraries.
+- **Reusable Code**: A library package is meant to provide reusable code that can be used by other programs. It does not run on its own.
+- **No `main` Function**: It contains a `lib.rs` file instead of `main.rs`, and it does not have a `main` function.
+- **Usage**: Used to define functions, structs, and traits that can be shared across multiple binary packages or other libraries.
 
 ## What Is The Difference Between The 4 Ways of Creating a Rust Project?
 

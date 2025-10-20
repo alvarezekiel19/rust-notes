@@ -1,5 +1,17 @@
 # Variable Assignment and Immutability
 
+## Sample Code
+
+```rust
+fn main() {
+    let message = "Name: John, Weight: ";
+    let weight = 190;
+
+    let kilos = weight / 2.2;
+    println!("{}{}", message, weight);
+}
+```
+
 In Rust, variable assignment is how we create and store values in our programs. To assign a value
 to a variable, we use the keyword `let`, followed by the name of the variable and the value we want
 to store. For example, if we want to store a person's weight we might write: `let weight = 190;`
@@ -19,11 +31,29 @@ weight = 200; // Now we can change the value to 200
 This way, you can change the contents of your box whenever you need to.
 
 ```rust
-fn main() {
-    let message = "Name: John, Weight: ";
-    let weight = 190;
-
-    let kilos = weight / 2.2;
-    println!("{}{}", message, weight);
-}
+let kilos = weight / 2.2;
 ```
+
+In the code expression above, when you try to divide an integer by a float, you encounter an error
+because Rust does not allow this operation directly. The variable `weight` is an integer (in this case,
+`190`), and `2.2` is a float. **_Rust is strict about types_**, meaning it wants to ensure that the
+operations you perform make sense with the types involved.
+
+Think of it like trying to divide a whole number of apples by a fraction of an apple. It just doesn't
+work without converting the whole number into a fraction first. To fix this, you need to make sure both
+numbers are of the same type. You can do this by converting `weight` to a float.
+
+```rust
+let weight = 190.0; // Now weight is a float
+let kilos = weight / 2.2; // This works because both are floats
+```
+
+Alternatively, if you want to keep `weight` as an integer, you can convert it to a float during the
+division:
+
+```rust
+let weight = 190; // weight is an integer
+let kilos = weight as f64 / 2.2; // Convert weight to float for the division
+```
+
+By ensuring both values are of the same type, you can perform the division without any errors.
